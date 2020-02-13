@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DB96D429-6223-4FE4-AB3D-757947A26DD6}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Alg</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AlteradorPropriedadeBotao.cpp" />
+    <ClCompile Include="AlteradorPropriedadeCaixaDeTexto.cpp" />
+    <ClCompile Include="AlteradorPropriedadeImagem.cpp" />
+    <ClCompile Include="AlteradorPropriedadeLetreiro.cpp" />
+    <ClCompile Include="AlteradorPropriedadePainel.cpp" />
+    <ClCompile Include="AlteradorPropriedadeTempo.cpp" />
+    <ClCompile Include="Controle.cpp" />
+    <ClCompile Include="ConversorDeString.cpp" />
+    <ClCompile Include="ConversorDeTipos.cpp" />
+    <ClCompile Include="Enquanto.cpp" />
+    <ClCompile Include="Escolha.cpp" />
+    <ClCompile Include="Explicacao.cpp" />
+    <ClCompile Include="Grafico.cpp" />
+    <ClCompile Include="SeSenao.cpp" />
+    <ClCompile Include="Jogo.cpp" />
+    <ClCompile Include="para.cpp" />
+    <ClCompile Include="Principal.cpp" />
+    <ClCompile Include="Rank.cpp" />
+    <ClCompile Include="RegistroDeDados.cpp" />
+    <ClCompile Include="Repita.cpp" />
+    <ClCompile Include="TelaDeRank.cpp" />
+    <ClCompile Include="TelaExplicacaoAlgoritmo1.cpp" />
+    <ClCompile Include="TelaExplicacaoAlgoritmo2.cpp" />
+    <ClCompile Include="TelaExplicacaoAlgoritmo3.cpp" />
+    <ClCompile Include="TelaExplicacaoCondicao1.cpp" />
+    <ClCompile Include="TelaExplicacaoCondicao2.cpp" />
+    <ClCompile Include="TelaExplicacaoRepeticao1.cpp" />
+    <ClCompile Include="TelaExplicacaoRepeticao2.cpp" />
+    <ClCompile Include="TelaExplicacaoRepeticao3.cpp" />
+    <ClCompile Include="TelaExplicacaoVariaveis1.cpp" />
+    <ClCompile Include="TelaExplicacaoVariaveis2.cpp" />
+    <ClCompile Include="TelaGrafico.cpp" />
+    <ClCompile Include="TelaInformacaoUsuario.cpp" />
+    <ClCompile Include="TelaIntroducao.cpp" />
+    <ClCompile Include="TelaMenuExplicacao.cpp" />
+    <ClCompile Include="TelaQuestao1.cpp" />
+    <ClCompile Include="TelaMenuPrincipal.cpp" />
+    <ClCompile Include="TelaQuestao2.cpp" />
+    <ClCompile Include="TelaQuestao3.cpp" />
+    <ClCompile Include="TelaQuestao4.cpp" />
+    <ClCompile Include="TelaQuestao5.cpp" />
+    <ClCompile Include="TelaQuestao6.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlteradorPropriedadeBotao.h" />
+    <ClInclude Include="AlteradorPropriedadeCaixaDeTexto.h" />
+    <ClInclude Include="AlteradorPropriedadeImagem.h" />
+    <ClInclude Include="AlteradorPropriedadeLetreiro.h" />
+    <ClInclude Include="AlteradorPropriedadePainel.h" />
+    <ClInclude Include="AlteradorPropriedadeTempo.h" />
+    <ClInclude Include="Controle.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ConversorDeString.h" />
+    <ClInclude Include="ConversorDeTipos.h" />
+    <ClInclude Include="Enquanto.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Escolha.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Explicacao.h" />
+    <ClInclude Include="Grafico.h" />
+    <ClInclude Include="SeSenao.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Jogo.h" />
+    <ClInclude Include="para.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Rank.h" />
+    <ClInclude Include="RegistroDeDados.h" />
+    <ClInclude Include="Repita.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaDeRank.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaExplicacaoAlgoritmo1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaExplicacaoAlgoritmo2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaExplicacaoAlgoritmo3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaExplicacaoCondicao1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaExplicacaoCondicao2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaExplicacaoRepeticao1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaExplicacaoRepeticao2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaExplicacaoRepeticao3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaExplicacaoVariaveis1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaExplicacaoVariaveis2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaGrafico.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaInformacaoUsuario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaIntroducao.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaMenuExplicacao.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaQuestao1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaMenuPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaQuestao2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaQuestao3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaQuestao4.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaQuestao5.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaQuestao6.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controle.resx">
+      <DependentUpon>Controle.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enquanto.resx">
+      <DependentUpon>Enquanto.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Escolha.resx">
+      <DependentUpon>Escolha.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeSenao.resx">
+      <DependentUpon>SeSenao.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="para.resx">
+      <DependentUpon>para.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repita.resx">
+      <DependentUpon>Repita.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaDeRank.resx">
+      <DependentUpon>TelaDeRank.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaExplicacaoAlgoritmo1.resx">
+      <DependentUpon>TelaExplicacaoAlgoritmo1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaExplicacaoAlgoritmo2.resx">
+      <DependentUpon>TelaExplicacaoAlgoritmo2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaExplicacaoAlgoritmo3.resx">
+      <DependentUpon>TelaExplicacaoAlgoritmo3.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaExplicacaoCondicao1.resx">
+      <DependentUpon>TelaExplicacaoCondicao1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaExplicacaoCondicao2.resx">
+      <DependentUpon>TelaExplicacaoCondicao2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaExplicacaoRepeticao1.resx">
+      <DependentUpon>TelaExplicacaoRepeticao1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaExplicacaoRepeticao2.resx">
+      <DependentUpon>TelaExplicacaoRepeticao2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaExplicacaoRepeticao3.resx">
+      <DependentUpon>TelaExplicacaoRepeticao3.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaExplicacaoVariaveis1.resx">
+      <DependentUpon>TelaExplicacaoVariaveis1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaExplicacaoVariaveis2.resx">
+      <DependentUpon>TelaExplicacaoVariaveis2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaGrafico.resx">
+      <DependentUpon>TelaGrafico.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaInformacaoUsuario.resx">
+      <DependentUpon>TelaInformacaoUsuario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaIntroducao.resx">
+      <DependentUpon>TelaIntroducao.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaMenuExplicacao.resx">
+      <DependentUpon>TelaMenuExplicacao.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaQuestao1.resx">
+      <DependentUpon>TelaQuestao1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaMenuPrincipal.resx">
+      <DependentUpon>TelaMenuPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaQuestao2.resx">
+      <DependentUpon>TelaQuestao2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaQuestao3.resx">
+      <DependentUpon>TelaQuestao3.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaQuestao4.resx">
+      <DependentUpon>TelaQuestao4.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaQuestao5.resx">
+      <DependentUpon>TelaQuestao5.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaQuestao6.resx">
+      <DependentUpon>TelaQuestao6.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
